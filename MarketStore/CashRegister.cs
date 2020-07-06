@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MarketStore
 {
@@ -28,7 +24,7 @@ namespace MarketStore
 
                 decimal total = purchaseAmount - discountValue;
                 string totalInfo = "Total value: " + total.ToString("$0.00");
-                return String.Format("{0} \n" + "{1} \n" + "{2} \n" + "{3} \n", 
+                return String.Format("{0} \n" + "{1} \n" + "{2} \n" + "{3} \n",
                                       purchaseValueInfo, discountRateInfo, discountValueInfo, totalInfo);
             }
             catch (Exception ex)

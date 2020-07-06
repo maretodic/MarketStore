@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MarketStore
+﻿namespace MarketStore
 {
 
     public enum CardLevel { Bronze, Silver, Gold }
@@ -44,7 +38,7 @@ namespace MarketStore
                     break;
                 case CardLevel.Gold:
                     discount = 0.02m;
-                    int hundredsSpent =(int)turnover / 100;
+                    int hundredsSpent = (int)turnover / 100;
                     decimal neki = ((decimal)hundredsSpent) / 100;
                     discount = (discount + neki) < 0.1m ? (discount + neki) : 0.1m;
                     break;
