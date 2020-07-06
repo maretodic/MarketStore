@@ -10,6 +10,7 @@ namespace MarketStore
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
